@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.archer.example.mapper.test2.Author2Mapper" >
+    <select id="findAuthorByNickname" resultType="Author">
+        SELECT *
+        FROM author
+        WHERE nickname = #{nickname}
+    </select>
+</mapper>
